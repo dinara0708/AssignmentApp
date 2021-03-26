@@ -9,7 +9,9 @@ import com.junodev.assignmentapp.R
 import com.junodev.assignmentapp.models.presentation.Tiles
 import com.junodev.assignmentapp.utils.extensions.setDebounceOnClickListener
 
-class TilesAdapter(private val listener: (Int) -> Unit) : RecyclerView.Adapter<TileViewHolder>() {
+class TilesAdapter(
+    private val listener: (Int) -> Unit
+) : RecyclerView.Adapter<TileViewHolder>() {
 
     private var numbers = listOf<Int>()
     private var lastAddedNumber: Int? = null
